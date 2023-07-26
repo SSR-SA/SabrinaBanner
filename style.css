@@ -165,7 +165,11 @@
   z-index: 1;
   opacity: 1;
   width: 200px;
-  transition: opacity 0.1s ease-in-out;
+}
+
+.carousel-img img.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-wrapper {
@@ -262,11 +266,6 @@
 .carousel-item:hover .carousel-subtitle {
   transform: translateY(200%);
 }
-
-/* .mask.animate-up {
-  animation: mask-up 0.5s;
-  display: block;
-} */
 
 @keyframes mask-down {
   0% {
